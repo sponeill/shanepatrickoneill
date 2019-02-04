@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<title>Shane Patrick O'Neill</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="custom-styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+
+    .bgimg-1 {
+        background-image: url('photos/bridges_of_madison_county_2.jpg');
+        min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+
+    .bgimg-2 {
+        background-image: url("/photos/spitfire_grill.jpg");
+        min-height: 100%;
+    }
+
+    /* Third image (Contact) */
+
+    .bgimg-3 {
+        background-image: url("/photos/little_mermaid_eric.jpg");
+        min-height: 100%;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+
+    @media only screen and (max-device-width: 1600px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+                onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
+            <a href="media.html" class="w3-bar-item w3-button w3-hide-small">MEDIA</a>
+            <a href="press.html" class="w3-bar-item w3-button w3-hide-small">PRESS</a>
+            <a href="Shane_Patrick_ONeill_Resume.pdf" class="w3-bar-item w3-button w3-hide-small">RESUME</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="media.html" class="w3-bar-item w3-button" onclick="toggleFunction()">MEDIA</a>
+            <a href="press.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PRESS</a>
+            <a href="Shane_Patrick_ONeill_Resume.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Bridges Image -->
+    <div class="bgimg-1 w3-display-container" id="home"></div>
+
+    <!-- Bridges -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h2>The Bridges of Madison County, Lakeland Civic Theatre</h2>
+        <hr>
+        <p class="review"><span class="review-text">The cement of this production is the totally convincing
+                relationship developed by Snider and O’Neill.
+                Every touch, kiss, and extended eye contact screamed, “this is real love.” Very seldom do you see such
+                real interconnectedness on stage. Bravo! </span><br><span class="pull-right">-Roy Berko, RoyBerko.info</span></p><br>
+        <p class="review"><span class="review-text">One could not ask for a more beautiful musical rendering of this
+                show, since the two leads, Trinidad Snider
+                as Francesca and Shane Patrick O’Neill as Robert, deliver Brown’s evocative songs with power,
+                tenderness and deep feeling.</span><br>
+            <span class="pull-right">-Christine Howey, Cleveland Scene</span></p><br>
+        <p class="review"><span class="review-text">[Snider and O'Neill] are a genuine pleasure to listen to and watch,
+                particularly when singing duets such as “One Second and a Million Miles.” </span><br>
+            <span class="pull-right">-Bob Abelman , Cleveland Jewish News</span></p><br>
+    </div>
+
+    <!-- Spitfire Grill Image -->
+    <div class="bgimg-2 w3-display-container" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;"></div>
+    </div>
+
+    <!-- Spitfire Grill -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h2>The Spitfire Grill, Beck Center for the Arts</h2>
+        <hr>
+        <p class="review"><span class="review-text">Gevaart as Percy and O’Neill as Sheriff Sutter also come equipped
+                with gorgeous voices that turn mediocre material into something miraculous. His “This Wide Woods” and
+                her
+                “A Ring Around the Moon” (and everything else she sings) are wonderful.</span><br>
+            <span class="pull-right">-Bob Abelman, Cleveland Jewish News</span></p><br>
+        <p class="review"><span class="review-text">Shane Patrick O'Neill was excellent as Sheriff Joe Sutter,
+                the hometown boy longing to get on the next train out of town, but held back by an unidentified need.
+                He has a strong singing voice that was well displayed in "Forest for the Trees."</span><br>
+            <span class="pull-right">-Roy Berko, RoyBerko.Info</span></p><br>
+    </div>
+
+       <!-- Third Parallax Image -->
+    <div class="bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide"></span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+            <h2>The Spitfire Grill, Beck Center for the Arts</h2>
+            <hr>
+            <p class="review"><span class="review-text">Gevaart as Percy and O’Neill as Sheriff Sutter also come equipped
+                    with gorgeous voices that turn mediocre material into something miraculous. His “This Wide Woods” and
+                    her
+                    “A Ring Around the Moon” (and everything else she sings) are wonderful.</span><br>
+                <span class="pull-right">-Bob Abelman, Cleveland Jewish News</span></p><br>
+            <p class="review"><span class="review-text">Shane Patrick O'Neill was excellent as Sheriff Joe Sutter,
+                    the hometown boy longing to get on the next train out of town, but held back by an unidentified need.
+                    He has a strong singing voice that was well displayed in "Forest for the Trees."</span><br>
+                <span class="pull-right">-Roy Berko, RoyBerko.Info</span></p><br>
+        </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16 footer">
+        <a href="#home" class="w3-button w3-light-grey">
+            <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://twitter.com/246ONeill"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
