@@ -135,14 +135,14 @@ html {
 /* Second image (Portfolio) */
 
 .bgimg-2 {
-    background-image: url("/photos/forever_plaid.jpg");
+    background-image: url("photos/forever_plaid.jpg");
     min-height: 800px;
 }
 
 /* Third image (Contact) */
 
 .bgimg-3 {
-    background-image: url("/photos/I_Love_You.jpg");
+    background-image: url("photos/I_Love_You.jpg");
     min-height: 800px;
 }
 
