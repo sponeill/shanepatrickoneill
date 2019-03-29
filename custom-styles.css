@@ -7,7 +7,7 @@
 }
 
 .footer{
-    background-color: #212121 !important;
+    background-color: #2a3052 !important;
 }
 
 .video-row {margin-bottom: 15px}
@@ -42,12 +42,13 @@
     
 }
 
+
 .contact-spacing {
     margin-left: 16.5%;
 }
 
 .contact-button {
-    background-color: #212121 !important;
+    background-color: #2a3052 !important;
     color: white !important;
     text-align: center;
     width: 12%; 
@@ -64,6 +65,11 @@
 
 .press {
     color: white;
+}
+
+#about{
+   padding-top: 15px;
+   padding-bottom: 15px; 
 }
 
 
@@ -149,7 +155,7 @@ html {
 /* Third image (Contact) */
 
 .bgimg-3 {
-    background-image: url("photos/high_fidelity.jpg");
+    background-image: url("photos/light_in_the_piazza.jpg");
     min-height: 800px;
 }
 
