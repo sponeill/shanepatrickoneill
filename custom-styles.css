@@ -42,6 +42,14 @@
     
 }
 
+.nav-link {
+    color: white;
+}
+
+.nav-bar-scrolled {
+    background-color: #2c2c2f !important;
+}
+
 #video {
     margin-top: 5px;
     margin-bottom: 5px;
