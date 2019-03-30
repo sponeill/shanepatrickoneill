@@ -98,17 +98,17 @@
     <div class="w3-content w3-container w3-padding-64" id="video">
 
         <div class="w3-center video-row">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MgGVsWh4p4M" frameborder="0"
+            <iframe id="video1" width="100%" src="https://www.youtube.com/embed/MgGVsWh4p4M" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+         </div>
+        <div class="w3-center video-row">
+            <iframe id="video2" width="100%" src="https://www.youtube.com/embed/W07gyXrHDl0" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
         <div class="w3-center video-row">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/W07gyXrHDl0" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <div class="w3-center video-row">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/giqG6yOgQJM" frameborder="0"
+            <iframe id="video3" width="100%" src="https://www.youtube.com/embed/giqG6yOgQJM" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -125,23 +125,14 @@
                 <iframe width="100%" height="166" scrolling="no" class="soundcloud" frameborder="no" allow="autoplay"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/317135751&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             </div>
-            <div class="row">
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/568245705&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            </div>
-            <div class="row">
+             <div class="row">
                 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/568244838&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             </div>
-            <div class="row">
-                <iframe width="100%" height="166" scrolling="no" class="soundcloud alpha" frameborder="no"
-                    allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177847538&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            </div>
-            <div class="row">
-                <iframe width="100%" height="166" scrolling="no" class="soundcloud" frameborder="no" allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/278426647&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            </div>
+        </div>
+
+        <div class="w3-center">
+            <h4>Find more on <a href="https://soundcloud.com/shanepatrickoneill" target="_blank">Soundcloud</a> and <a href="https://www.youtube.com/user/shane515" target="_blank">Youtube</a>!</h3>
         </div>
     </div>
 
@@ -159,5 +150,20 @@
         </footer>
 
 </body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready( function() {
+
+        var videoWidth = $('#video1').width();
+        var height = videoWidth/16*9;
+        $('#video1').height(height);
+        $('#video2').height(height);
+        $('#video3').height(height);
+    
+})
+
+</script>
 
 </html>
