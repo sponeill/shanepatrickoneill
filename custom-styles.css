@@ -7,7 +7,7 @@
 }
 
 .footer{
-    background-color: #2a3052 !important;
+    background-color: #2c2c2f !important;
 }
 
 .video-row {margin-bottom: 15px}
@@ -35,11 +35,16 @@
 }
 
 .content-spacer {
-    padding-top: 75px;
-    padding-bottom: 25px;
-    margin-top:15px;
-    margin-bottom:15px;
+    padding-top: 65px;
+    padding-bottom: 15px;
+    /* margin-top:5px; */
+    /* margin-bottom:5px; */
     
+}
+
+#video {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -47,8 +52,16 @@
     margin-left: 16.5%;
 }
 
+.about-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    word-break: break-word;
+
+}
+
 .contact-button {
-    background-color: #2a3052 !important;
+    background-color: #2c2c2f !important;
     color: white !important;
     text-align: center;
     width: 12%; 
@@ -64,7 +77,7 @@
 }
 
 .press {
-    color: white;
+    color: black;
 }
 
 #about{
@@ -155,7 +168,7 @@ html {
 /* Third image (Contact) */
 
 .bgimg-3 {
-    background-image: url("photos/light_in_the_piazza.jpg");
+    background-image: url("photos/forever_plaid.jpg");
     min-height: 800px;
 }
 
