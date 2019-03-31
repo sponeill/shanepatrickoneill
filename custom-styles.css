@@ -15,16 +15,13 @@
 .pull-right{text-align: right}
 
 .review {
-    margin-bottom: 25px;
-    width: 35vw;
-    margin: auto;
+    width: 100%;
 }
 
 .review-text{
     font-style: italic;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 45px;
 }
 
 .footer-link{
@@ -36,10 +33,7 @@
 
 .content-spacer {
     padding-top: 65px;
-    padding-bottom: 15px;
-    /* margin-top:5px; */
-    /* margin-bottom:5px; */
-    
+    padding-bottom: 15px;  
 }
 
 .nav-link {
